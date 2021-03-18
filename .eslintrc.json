@@ -4,7 +4,9 @@
         "node": true
     },
     "extends": [
-        "airbnb-base"
+        "airbnb-base",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -13,9 +15,10 @@
     },
     "plugins": [
         "@typescript-eslint",
-        "plugin:@typescript-eslint/recommended"
+        "prettier"
     ],
     "rules": {
+        "prettier/prettier": "error",
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": [
             "error"
